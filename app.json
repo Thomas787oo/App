@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Editions Charisma",
+    "slug": "editions-charisma",
+    "version": "1.0.0",
+    "description": "Application mobile des Editions Charisma",
+    "githubUrl": "https://github.com/",
+    "ios": {
+      "bundleIdentifier": "com.charisma.editions",
+      "appStoreUrl": "https://itunes.apple.com/us/app/editions-charisma/id12345678",
+      "buildNumber": "1"
+    },
+    "android": {
+      "package": "com.charisma.editions",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.charisma.editions",
+      "versionCode": 1
+    },
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./src/assets/images/image-app-icon.png",
+    "splash": {
+      "image": "src/assets/editions-charisma-app/images/splash-screen.png",
+      "resizeMode": "cover"
+    },
+    "assetBundlePatterns": [
+      "src/assets/images/*",
+      "src/assets/fonts",
+      "src/layouts/**/assets/*"
+    ],
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#F7F9FC"
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
+  }
+}

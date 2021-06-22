@@ -1,0 +1,26 @@
+import React, {ReactElement} from 'react';
+import {SvgXml} from 'react-native-svg';
+
+export const Search = (props: { height?: number, width?: number, color?: string }): ReactElement => {
+
+    const config = { height: 24, width: 24, color: '#000000' };
+    if (props.height) {
+        config.height = props.height;
+    }
+    if (props.width) {
+        config.width = props.width;
+    }
+    if (props.color) {
+        config.color = props.color;
+    }
+
+    // original content located at assets/editions-charisma-app/svg/search.svg
+    const svgContent = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.7962 20.8825C19.1936 20.8825 19.6108 20.7235 19.9089 20.4255C20.5248 19.8095 20.5248 18.7962 19.9089 18.1802L16.7099 14.9813C17.604 13.7295 18.1405 12.2194 18.1405 10.5702C18.1405 6.39767 14.7428 3 10.5702 3C6.39767 3 3 6.39767 3 10.5702C3 14.7428 6.39767 18.1405 10.5702 18.1405C11.9611 18.1405 13.2526 17.763 14.3653 17.1073L17.6636 20.4056C17.9815 20.7235 18.3988 20.8825 18.7962 20.8825ZM10.5702 14.9813C8.14618 14.9813 6.15924 12.9943 6.15924 10.5702C6.15924 8.14618 8.14618 6.15924 10.5702 6.15924C12.9943 6.15924 14.9813 8.14618 14.9813 10.5702C14.9813 12.9943 12.9943 14.9813 10.5702 14.9813Z" fill="${config.color}"/>
+</svg>
+`;
+
+    const SvgRender = () => <SvgXml xml={svgContent} width={config.width} height={config.height} /> ;
+
+    return <SvgRender/>;
+}
